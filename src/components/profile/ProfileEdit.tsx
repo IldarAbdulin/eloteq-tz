@@ -51,7 +51,7 @@ const ProfileEdit = ({ setIsEditing, userProfile }: IProfileProps) => {
     setSubmitError(null);
 
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('eloteq_tz_access_token');
       const { data } = await $githubApi.patch('/user', editData, {
         headers: {
           Authorization: `Bearer ${token}`,

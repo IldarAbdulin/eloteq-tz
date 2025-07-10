@@ -59,13 +59,7 @@ VITE_GITHUB_API_URL="https://api.github.com"
 
 ##### Версия Node.js должна быть больше или равен 20.19.0 или меньше или чтоб был равен 22.12.0 версии
 
-```bash
-npm run dev
-# или
-yarn dev
-```
-
-Открываем второй терминал и запускаем сервер:
+### Сначала запустим сервер:
 
 ```bash
 npm run server
@@ -73,8 +67,16 @@ npm run server
 yarn server
 ```
 
-Проект будет доступен по адресу:  
-[http://localhost:5173](http://localhost:5173)
+### Затем открываем еще один терминал и запускаем фронт:
+
+```bash
+npm run dev
+# или
+yarn dev
+```
 
 Сервер будет доступен по адресу:  
 [http://localhost:4000](http://localhost:4000)
+
+Проект будет доступен по адресу:  
+[http://localhost:5173](http://localhost:5173)

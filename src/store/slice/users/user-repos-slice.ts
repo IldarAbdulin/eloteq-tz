@@ -12,7 +12,7 @@ export const getUserRepositories = createAsyncThunk<
   IGetUserRepositories
 >('users/getUserRepositories', async ({ username, page }, thunkAPI) => {
   try {
-    const token = localStorage.getItem('access_token');
+    const token = localStorage.getItem('eloteq_tz_access_token');
     const { data } = await $githubApi.get(`/users/${username}/repos`, {
       params: {
         page,

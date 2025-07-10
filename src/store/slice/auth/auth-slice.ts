@@ -18,7 +18,7 @@ export const exchangeCodeForToken = createAsyncThunk<
     });
     const { access_token } = data;
 
-    localStorage.setItem('access_token', access_token);
+    localStorage.setItem('eloteq_tz_access_token', access_token);
 
     return access_token;
   } catch (error) {
@@ -38,7 +38,7 @@ export const authSlice = createSlice({
   reducers: {
     logout: (state) => {
       state.token = null;
-      localStorage.removeItem('access_token');
+      localStorage.removeItem('eloteq_tz_access_token');
     },
   },
   extraReducers: (builder) => {

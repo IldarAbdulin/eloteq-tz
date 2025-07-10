@@ -10,7 +10,7 @@ export const getUserProfile = createAsyncThunk(
   'user/getUserProfile',
   async (_, thunkAPI) => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('eloteq_tz_access_token');
       const { data } = await $githubApi.get<IUserProfile>('/user', {
         headers: {
           Authorization: `Bearer ${token}`,

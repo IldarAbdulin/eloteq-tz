@@ -13,7 +13,7 @@ export const getRepositories = createAsyncThunk<
   IGetRepositoriesProps
 >('repo/getRepositories', async ({ visibility, page }, thunkAPI) => {
   try {
-    const token = localStorage.getItem('access_token');
+    const token = localStorage.getItem('eloteq_tz_access_token');
     const { data } = await $githubApi.get<IRepository[]>(`/user/repos`, {
       params: {
         visibility,
